@@ -1,0 +1,47 @@
+---
+import KnowledgeList from "../KnowledgeList.astro";
+---
+
+<section class="w-full py-10 lg:py-0 min-h-[450px] flex items-center justify-center">
+	<article class="w-4/5 flex flex-col items-center justify-center gap-10">
+		<h2 class="text-2xl font-medium text-center">Conocimientos</h2>
+		<ul class="w-4/5 flex-col lg:flex-row flex items-center lg:items-start justify-center gap-16">
+			<KnowledgeList title="Lenguajes">
+				<li>JavaScript ES6</li>
+				<li>Typescript</li>
+				<li>Java SE8</li>
+				<li>C</li>
+			</KnowledgeList>
+			<KnowledgeList title="Diseño UX/UI">
+				<li>Figma</li>
+				<li>Tailwind</li>
+				<li>MUI</li>
+				<li>Bootstrap</li>
+			</KnowledgeList>
+			<KnowledgeList title="Frameworks/Bibliotecas">
+				<li>NodeJS</li>
+				<li>NextJs 14</li>
+				<li>ReactJS</li>
+				<li>Astro</li>
+				<li>Express</li>
+			</KnowledgeList>
+			<KnowledgeList title="Bases de Datos">
+				<li>Prisma ORM</li>
+				<li>MySQL</li>
+				<li>MariaDB</li>
+				<li>MongoDB</li>
+			</KnowledgeList>
+			<KnowledgeList title="Desarrollo Web: HTML5, JS, CSS3">
+				<li>HTML</li>
+				<li>JS</li>
+				<li>CSS3</li>
+			</KnowledgeList>
+			<KnowledgeList title="Control de Versiones">
+				<li>GitHub</li>
+			</KnowledgeList>
+			<KnowledgeList title="Diseño de Contenido">
+				<li>Adobe Animate</li>
+			</KnowledgeList>
+		</ul>
+	</article>
+</section>

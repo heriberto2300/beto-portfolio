@@ -1,0 +1,20 @@
+---
+import AboutMe from "../components/sections/AboutMe.astro";
+import Contact from "../components/sections/Contact.astro";
+import Knowledge from "../components/sections/Experience.astro";
+import Presentation from "../components/sections/Presentation.astro";
+import Projects from "../components/sections/Projects.astro";
+import Skills from "../components/sections/Knowledge.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Heriberto Alonso">
+	<main class="min-h-screen w-full">
+		<Presentation />
+		<AboutMe />
+		<Skills />	
+		<Projects />
+		<!-- <Knowledge /> -->
+		<Contact />
+	</main>
+</Layout>
