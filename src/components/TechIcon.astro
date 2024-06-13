@@ -1,0 +1,51 @@
+---
+import { TECHNOLOGIES } from "../enums/technologies";
+import Animate from "./icons/Animate.astro";
+import Css from "./icons/Css.astro";
+import Figma from "./icons/Figma.astro";
+import Html from "./icons/Html.astro";
+import Java from "./icons/Java.astro";
+import Js from "./icons/Js.astro";
+import Next from "./icons/Next.astro";
+import NodeIcon from "./icons/NodeIcon.astro";
+import ReactIcon from "./icons/ReactIcon.astro";
+import Tailwind from "./icons/Tailwind.astro";
+import Ts from "./icons/Ts.astro";
+import Weka from "./icons/Weka.astro";
+import Prisma from "./icons/Prisma.astro";
+
+interface Props {
+  icon: TECHNOLOGIES;
+}
+
+const { icon } = Astro.props;
+
+const icons: Record<TECHNOLOGIES, any> = {
+  [TECHNOLOGIES.ANIMATE]: Animate,
+  [TECHNOLOGIES.CSS]: Css,
+  [TECHNOLOGIES.FIGMA]: Figma,
+  [TECHNOLOGIES.HTML]: Html,
+  [TECHNOLOGIES.NEXT]: Next,
+  [TECHNOLOGIES.NODE]: NodeIcon,
+  [TECHNOLOGIES.REACT]: ReactIcon,
+  [TECHNOLOGIES.TAILWIND]: Tailwind,
+  [TECHNOLOGIES.TS]: Ts,
+  [TECHNOLOGIES.JAVA]: Java,
+  [TECHNOLOGIES.JS]: Js,
+  [TECHNOLOGIES.WEKA]: Weka,
+  [TECHNOLOGIES.PRISMA]: Prisma,
+};
+
+const IconComponent = icons[icon];
+---
+
+<div
+  class="rounded-md shadow-md bg-cupcacke-4 hover:scale-105
+hover:bg-gray-700 transition p-5 relative group flex flex-col items-center justify-center"
+>
+  {<IconComponent /> ? <IconComponent /> : <span>{icon}</span>}
+  <span
+    class="w-full absolute top-10 scale-0 transition-all rounded bg-gray-800 p-2 text-xs text-white group-hover:scale-100"
+    >{icon}</span
+  >
+</div>

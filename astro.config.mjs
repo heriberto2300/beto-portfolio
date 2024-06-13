@@ -1,11 +1,12 @@
 import { defineConfig } from 'astro/config';
 import vercel from '@astrojs/vercel/serverless';
-
 import tailwind from "@astrojs/tailwind";
+
+import preact from "@astrojs/preact";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind()],
+  integrations: [tailwind(), preact()],
   output: 'hybrid',
-  adapter: vercel(),
+  adapter: vercel()
 });
