@@ -24,7 +24,6 @@ const Skills = () => {
 				<span>MariaDB</span>
 				<span>MongoDB</span>
 				<span>HTML</span>
-				<span>JS</span>
 				<span>CSS3</span>
 				<span>GitHub</span>
 				<span>Adobe Animate</span>
