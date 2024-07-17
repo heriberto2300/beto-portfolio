@@ -1,8 +1,12 @@
 import ScrollIndicator from "../animated/scrollIndicator";
+import BoxesSpin from "../animated/spinBoxes";
 
 const Presentation = () => {
   return (
-    <section className="w-full px-[4rem] h-auto">
+    <section className="w-full px-[4rem] h-auto relative">
+      <div className="w-full absolute">
+        <BoxesSpin />
+      </div>
       <div className="w-full h-[700px] flex flex-wrap items-center justify-center">
         <article className="w-full">
           <h1 className="text-4xl font-medium leading-tight">Heriberto Alonso Meléndez</h1>
