@@ -8,7 +8,7 @@ const Presentation = () => {
           <h1 className="text-4xl font-medium leading-tight">Heriberto Alonso Meléndez</h1>
           <h2 className="text-[80px]">Ingeniero en Computación</h2>
           <p className="mt-[1rem] text-2xl w-3/4 font-normal">
-            Soy Desarrollador de Software y apasionado del desarrollo web Frontend y Backend, así como otras areas de la programación como el Machine learning
+            Soy Desarrollador de Software y apasionado del desarrollo web Frontend y Backend, así como otras areas de la programación como el Machine Learning
             y la Visión por Computadora.
           </p>
 
